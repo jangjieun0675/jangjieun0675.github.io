@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05장 폼 만들기</title>
+</head>
+<body>
+  <fieldset>
+    <legend>로그인 정보</legend>
+    <input type="hidden" name="사용자 값" value="사이트를 통한 직접 로그인">
+    <label>아이디 <input type="text" size="20" autofocus placeholder="아이디를 입력하세요"></label>
+    <label>비밀번호 <input type="password" size="20" autofocus placeholder="비밀번호를 입력하세요"></label>
+    <input type="image" src="images/login.png" alt="로그인버튼">
+  </fieldset><br>
+
+  <fieldset>
+    <legend>배송 정보</legend>
+    <ul>
+      <li><label>이름 <input type="text" required></label></li>
+      <li><label>배송 주소 <input type="text"required></label></li>
+      <li><label>이메일 <input type="email"required></label></li>
+      <li><label>연락처 <input type="tel"required></label></li>
+    </ul>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해 주세요.</b></p>
+    <label><input type="text" size="10" value="사과" readonly></label><br>
+    <label><input type="checkbox" value="p3" checked>선물용 3kg
+    <input type="number" min="0" max="5">개 (최대 5개) </label><br>
+    <label><input type="checkbox" value="p5">선물용 5kg
+    <input type="number" min="0" max="3">개 (최대 3개) </label><br>
+    <label><input type="checkbox" value="h3">가정용 3kg
+    <input type="range" max="5" value="1">개 (최대5개) </label><br>
+    <label><input type="checkbox" value="h5">가정용 5kg
+    <input type="range" max="3" value="1">개 (최대3개)</label><br>
+
+    <p><b>포장선택</b></p>
+    <label><input type="radio" value="yes" name="gift">선물 포장</label>
+    <label><input type="radio" value="no" name="gift">선물 포장 안 함</label>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>배송 날짜</legend>
+    <input type="datetime-local">
+  </fieldset><br>
+  <input type="submit" value="주문하기">
+  <input type="reset" value="취소하기">
+  <input type="button" value="공지 창 열기"><br>
+
+  <fieldset>
+    <legend>반품 정보</legend>
+    <p>만일 수령한 상품에 문제가 있다면 즉시 <b>반품 신청</b>해 주세요.</p>
+    <p>반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
+    <input type="file">
+  </fieldset><br>
+
+  
+
+
+</body>
+</html>
